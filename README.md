@@ -17,9 +17,9 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-Yahtzee
+Yahtzee!
 ## Sub-Heading ##
-Classic dice rolling game for fun and relaxation for people of all ages
+Classic dice rolling game of fun and relaxation for people of all ages
 
 ## Summary ##
 Play Yahtzee online for free!
