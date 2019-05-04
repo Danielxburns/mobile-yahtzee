@@ -17,37 +17,27 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-  Yahtzee
-
+Yahtzee
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-  Classic dice rolling game for fun and relaxation for people of all ages
+Classic dice rolling game for fun and relaxation for people of all ages
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
-  Play Yahtzee online for free! 
+Play Yahtzee online for free!
 
 ## Problem ##
-  > Describe the problem your product solves.
-  Bored?
+Bored?
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
-   Play Yahtzee!
+Play Yahtzee!
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
-  You know this game! It's Yahtzee!
+You know this game! It's Yahtzee!
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
-  Enter your name. Click 'roll the dice' and start playing Yahtzee!
+Enter your name. Click 'roll the dice' and start playing Yahtzee!
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-  "I was so bored I thought I would die, but then I found...  Yahtzee!!" -hypothetical customer
+"I was so bored I thought I would die, but then I found...  Yahtzee!!" -hypothetical customer
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
-  click download and install. Do it now!
+Click download and install. Do it now!
