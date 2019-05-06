@@ -5,15 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -d --watch"
+    "build": "webpack -d --watch",
+    "start": "nodemon server/index.js"
   },
   "keywords": [],
   "author": "Daniel Burns <danielburnstech@gmail.com> (burnsart.com)",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "mongoose": "^5.5.5",
+    "path": "^0.12.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -22,6 +25,9 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-react": "^7.13.0",
     "webpack": "^4.29.6"
   }
 }
