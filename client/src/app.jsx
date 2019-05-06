@@ -4,17 +4,25 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      players: []
     };
   }
 
-  // componentDidMount() {
-  //   fetch('http://localhost:3000/users')
-  //     .then(res => res.json())
-  //     .catch()
-  // }
+  componentDidMount() {
+    fetch('http://localhost:3000/users')
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          players: data
+        })
+      })
+      .catch(err => {
+        console.log(`fetch error: ${err}`);
+      })
+    }
 
-  render () {
+    render () {
+      console.log(this.state);
     return (
       <div>Let's play some Yahtzee!</div>
     );
