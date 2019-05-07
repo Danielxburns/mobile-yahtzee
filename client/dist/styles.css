@@ -1,0 +1,23 @@
+.scoresheet {
+  clear: both;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  width: 800px;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+th, td {
+  border: 1px solid #000;
+  padding: 2px;
+  position: relative;
+  vertical-align: middle;
+}
+
+tr.noborder td {
+  border: none;
+}

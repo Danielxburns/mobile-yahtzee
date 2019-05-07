@@ -1,10 +1,258 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" type='text/css' href="./styles.css">
     <title>Daniel's MVP</title>
+    <!-- <script id="d1" src="http://www.javascriptkit.com/complete/images/d1.gif"></script>
+    <script id="d2" src="http://www.javascriptkit.com/complete/images/d2.gif"></script>
+    <script id="d3" src="http://www.javascriptkit.com/complete/images/d3.gif"></script>
+    <script id="d4" src="http://www.javascriptkit.com/complete/images/d4.gif"></script>
+    <script id="d5" src="http://www.javascriptkit.com/complete/images/d5.gif"></script>
+    <script id="d6" src="http://www.javascriptkit.com/complete/images/d6.gif"></script> -->
   </head>
   <body>
     <div id="app">Everybody loves Yahtzee!</div>
-    <script src="./src/index.js"></script>
+    <div class="scoresheet">
+      <table>
+        <thead>
+          <tr>
+            <th>UPPER SECTION</th>
+            <th>HOW TO<br>SCORE</th>
+            <th>GAME #1</th>
+            <th>GAME #2</th>
+            <th>GAME #3</th>
+            <th>GAME #4</th>
+            <th>GAME #5</th>
+            <th>GAME #6</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aces</td>
+            <td>Count and Add<br>Only Aces</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Twos</td>
+            <td>Count and Add<br>Only Twos</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Threes</td>
+            <td>Count and Add<br>Only Threes</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Fours</td>
+            <td>Count and Add<br>Only Fours</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Fives</td>
+            <td>Count and Add<br>Only Fives</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Sixes</td>
+            <td>Count and Add<br>Only Sixes</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>TOTAL SCORE</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>BONUS</td>
+            <td>Score 35</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>TOTAL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr class="noborder">
+            <td colspan="8">LOWER SECTION</td>
+          </tr>
+          <tr>
+            <td>3 of a kind</td>
+            <td>Add total of all dice</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4 of a kind</td>
+            <td>Add total of all dice</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Full house</td>
+            <td>Score 25</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Small straight</td>
+            <td>Score 30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Large straight</td>
+            <td>Score 40</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>YAHTZEE</td>
+            <td>Score 50</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Chance</td>
+            <td>Score total of all 5 dice</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>YAHTZEE BONUS #1</td>
+            <td>Score 100</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>YAHTZEE BONUS #2</td>
+            <td>Score 100</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>YAHTZEE BONUS #3</td>
+            <td>Score 100</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>LOWER TOTAL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>UPPER TOTAL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>GRAND TOTAL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="bundle.js"></script>
   </body>
 </html>

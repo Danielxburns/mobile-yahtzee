@@ -1,4 +1,5 @@
 import React from 'react';
+import Dice from './dice.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -24,7 +25,10 @@ class App extends React.Component {
     render () {
       console.log(this.state);
     return (
-      <div>Let's play some Yahtzee!</div>
+      <div>Let's play some Yahtzee!
+        <Dice />
+      </div>
+
     );
   }
 }
