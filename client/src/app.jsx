@@ -1,4 +1,5 @@
 import React from 'react';
+import Popup from 'reactjs-popup'
 import Dice from './dice.jsx';
 
 class App extends React.Component {
@@ -23,10 +24,10 @@ class App extends React.Component {
     }
 
     render () {
-      console.log(this.state);
     return (
-      <div>Let's play some Yahtzee!
-        <Dice />
+      <div>
+        <h1>Let's play Yahtzee!</h1>
+        <Dice players={this.state.players} />
       </div>
 
     );
