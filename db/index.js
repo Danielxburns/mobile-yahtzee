@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/yahtzee', {useNewUrlParser: true});
+let uri = 'mongodb://localhost/yahtzee' || 'mongodb://heroku_666lnnhl:rvnjfq9cr5l57vesd4a4l9d8tc@ds231307.mlab.com:31307/heroku_666lnnhl'
+mongoose.connect(uri, {useNewUrlParser: true});
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'db connection error:'));
@@ -11,7 +12,7 @@ db.once('open', () => {
 
 const userSchema = mongoose.Schema({
   "username": String,
-  "highSore": Number,
+  "highScore": Number,
 });
 
 let User = mongoose.model('User', userSchema);
