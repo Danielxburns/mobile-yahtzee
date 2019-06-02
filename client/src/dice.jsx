@@ -1,39 +1,30 @@
 import React from 'react';
-
-const DiceImage = ({ roll }) => {
-  if (roll === 1) {
-    return <img className="dice-image" src="faces/one.png" alt="1" />;
-  } else if (roll === 2) {
-    return <img className="dice-image" src="faces/two.png" alt="2" />;
-  } else if (roll === 3) {
-    return <img className="dice-image" src="faces/three.png" alt="3" />;
-  } else if (roll === 4) {
-    return <img className="dice-image" src="faces/four.png" alt="4" />;
-  } else if (roll === 5) {
-    return <img className="dice-image" src="faces/five.png" alt="5" />;
-  } else if (roll === 6) {
-    return <img className="dice-image" src="faces/six.png" alt="6" />;
-  }
-};
+import DiceImage from './diceImage.jsx'
 
 class Dice extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      rolls: []
+      rolls: [],
+      hold: [false, false, false, false, false],
     };
     this.throwDice = this.throwDice.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.hold = this.hold.bind(this);
   }
 
   throwDice() {
     let rolls = [];
     for (let i = 0; i < 5; i++) {
-      rolls.push(Math.floor(Math.random() * 6) + 1);
+      if (this.state.hold[i] !== false) {
+        rolls.push(this.state.rolls[i])
+      } else {
+        rolls.push(Math.floor(Math.random() * 6) + 1);
+      }
     }
     this.setState({
       rolls: rolls
-    });
+    }, console.log(`this.state.rolls=${this.state.rolls}`));
   }
 
   handleChange(e) {
@@ -43,21 +34,42 @@ class Dice extends React.Component {
     })
   }
 
+  hold (die) {
+    console.log(`You clicked on die# ${die + 1}!`)
+    this.setState ((state) => {
+      const hold = state.hold.map((item, i) => {
+        if (i === die) {
+          // can i toggle the border property here
+          // maybe get element where key = index
+
+          return item = !item;
+        } else {
+          return item;
+        }
+      });
+      return {
+        hold,
+      };
+    });
+  }
+// loop thru state.hold
+  // if hold[i] is true
+      // toggle border
+
   render() {
-    console.log(`inside render props= ${JSON.stringify(this.props.players)}`);
+    // console.log(`inside render props= ${JSON.stringify(this.props.players)}`);
     return (
       <div className="dice-container" >
         <h3>Player</h3>
         <select value={this.state.player} onChange={this.handleChange}>
           <option key="0" > choose</option>
           {this.props.players.map((player) => (
-            // console.log('inside map player=' + JSON.stringify(player.username))
-            <option key={player._id} > {player.username} &nbsp; High Score: {player.highScore}</option>
+            <option key={player._id} > {player.username} &nbsp; High Score: {player.highscore}</option>
           ))};
         </select>
         <div>
         {this.state.rolls.map((roll, index) => (
-          <DiceImage roll={roll} key={index} />
+          <DiceImage roll={roll} key={index} /* border={this.state.hold[index]} */ hold={() => this.hold(index)} />
         ))}
         </div>
         <button className="button" onClick={this.throwDice} >Roll 'em!</button>
