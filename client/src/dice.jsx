@@ -64,7 +64,7 @@ class Dice extends React.Component {
         <select value={this.state.player} onChange={this.handleChange}>
           <option key="0" > choose</option>
           {this.props.players.map((player) => (
-            <option key={player._id} > {player.username} &nbsp; High Score: {player.highscore}</option>
+            <option key={player._id} > {player.username} &nbsp; High Score: {player.highScore}</option>
           ))};
         </select>
         <div>

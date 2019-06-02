@@ -34,7 +34,7 @@ let getAllUsers = (callback) => {
 let postNewUser = (username, callback) => {
   let newUser = new User({
     "username": username,
-    "highscore": 0
+    "highScore": 0
   })
   console.log(`inside postNewUser ${newUser}`);
   newUser.save((err, result) => {
