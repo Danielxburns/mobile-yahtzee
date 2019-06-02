@@ -4,7 +4,7 @@ const path = require('path');
 const db = require('../db/index.js');
 
 const app = express();
-const port = 3000;
+let port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());

@@ -10,18 +10,18 @@ class App extends React.Component {
     };
   }
 
-  componentDidMount() {
-    fetch('http://localhost:3000/users')
-      .then(res => res.json())
-      .then(data => {
-        this.setState({
-          players: data
-        })
-      })
-      .catch(err => {
-        console.log(`fetch error: ${err}`);
-      })
-    }
+  // componentDidMount() {
+  //   fetch('http://localhost:3000/users')
+  //     .then(res => res.json())
+  //     .then(data => {
+  //       this.setState({
+  //         players: data
+  //       })
+  //     })
+  //     .catch(err => {
+  //       console.log(`fetch error: ${err}`);
+  //     })
+  //   }
 
     render () {
     return (
