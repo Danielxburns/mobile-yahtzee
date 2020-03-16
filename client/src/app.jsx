@@ -1,6 +1,7 @@
 import React from 'react';
 import Popup from 'reactjs-popup'
 import Dice from './dice.jsx';
+import fetch from 'node-fetch'
 
 class App extends React.Component {
   constructor(props) {
