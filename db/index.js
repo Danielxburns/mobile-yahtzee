@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 let uri = 'mongodb://localhost/yahtzee' || 'mongodb://heroku_666lnnhl:rvnjfq9cr5l57vesd4a4l9d8tc@ds231307.mlab.com:31307/heroku_666lnnhl'
-mongoose.connect(uri, {useNewUrlParser: true});
+mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'db connection error:'));
