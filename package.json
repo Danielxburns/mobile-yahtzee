@@ -1,12 +1,13 @@
 {
-  "name": "hrr37-MVP",
+  "name": "yahtzee",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -d --watch",
-    "start": "nodemon server/index.js || node server/index.js"
+    "start": "nodemon server/index.js || node server/index.js",
+    "start-dev": "nodemon server/index.js"
   },
   "keywords": [],
   "author": "Daniel Burns <danielburnstech@gmail.com> (burnsart.com)",
@@ -28,6 +29,7 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-react": "^7.13.0",
+    "nodemon": "^2.0.22",
     "webpack": "^4.29.6"
   }
 }
