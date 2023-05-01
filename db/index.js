@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-let uri = 'mongodb://localhost/yahtzee' || 'mongodb://heroku_666lnnhl:rvnjfq9cr5l57vesd4a4l9d8tc@ds231307.mlab.com:31307/heroku_666lnnhl'
+const { REACT_APP_HEROKU_URI } = require('dotenv')
+
+let uri = 'mongodb://localhost/yahtzee' || 'REACT_APP_HEROKU_URI'
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
 

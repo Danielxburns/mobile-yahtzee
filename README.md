@@ -39,7 +39,7 @@ These instructions will get you a copy of the project up and running on your loc
 `npm install`
 `npm test`
 `npm build`
-`npm start`
+`npm run dev`
 
 #### connect to local database service:
 
