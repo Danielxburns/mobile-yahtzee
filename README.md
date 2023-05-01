@@ -25,6 +25,8 @@ Enter your name. Click 'roll the dice' and start playing Yahtzee!
 ## Closing and Call to Action ##
 Click download and install.
 
+![yahtzee resized](https://user-images.githubusercontent.com/41316262/235382730-619c9eb1-5430-4e8b-bb3a-45abc55a9890.png)
+
 ---
 
 ## Getting Started
